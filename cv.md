@@ -16,4 +16,21 @@ I work as a system administrator 10 years. I have experience programming in Delp
     - JavaScript
     - JAVA
     - SQL
+
+## Code
+```
+private void rotateClockwise(){
+    int tmp[][] = new int[SIDE][SIDE];
+    for (int i = 0; i < SIDE; i++) {
+        for (int j = 0; j < SIDE; j++) {
+            tmp[j][SIDE-i-1]=gameField[i][j];
+        }
+    }
+    for (int i = 0; i < SIDE; i++) {
+        for (int j = 0; j < SIDE; j++) {
+            gameField[i][j]=tmp[i][j];
+        }
+    }
+}
+```
  
