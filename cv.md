@@ -33,4 +33,9 @@ private void rotateClockwise(){
     }
 }
 ```
- 
+
+## Education
+BISGU / Applied Informatics in Economics
+
+## English level
+At the moment my level is A0, but now I am taking an English course. I hope the level up.
