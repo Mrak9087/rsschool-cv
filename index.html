@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="content">
+                <section class = "general">
+                    <img src="./photo.jpg" alt="photo" >
+                    <h2 class = "fio">Maxim Romanenko</h2>
+                    <article class = "contacts">
+                        <ul class = "list_contacts">
+                            <li class = "email"><h3>E-mail:</h3> maks19-88@mail.ru</li>
+                            <li class = "skype"><h3>Skype:</h3>sirius5385</li>
+                            <li class = "telegram"><h3>Telegram:</h3>@Dikar</li>
+                            <li class = "git"><a href="https://github.com/mrak9087/">GitHub</a></li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section class = "information">
+                    <summary class = "common summary">
+                        <h2>Summary</h2>
+                        <p>I work as a system administrator 10 years. 
+                            I have experience programming in Delphi, 
+                            create clients for working with databases: MS SQL, MySQL, Firebird. I know SQL. 
+                            Basic knowledge of Java. The institute had a course on HTML, CSS. 
+                            After graduation, I was engaged in page layout for some time. 
+                            I like solving various puzzles. I want to become a professional developer. 
+                            I am ready to develop in this direction. No bad habits.</p>
+                    </summary>
+                    <section class = "common skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>Delphi (Rad Studio)</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>JAVA</li>
+                            <li>SQL</li>
+                        </ul>
+                    </section>
+                    <section class = "common code">
+                        <h2>Code</h2>
+                        <p>
+                            <code>
+
+    private void rotateClockwise(){
+        int tmp[][] = new int[SIDE][SIDE];
+        for (int i = 0; i &lt; SIDE; i++) {
+            for (int j = 0; j &lt; SIDE; j++) {
+                tmp[j][SIDE-i-1]=gameField[i][j];
+            }
+        }
+        for (int i = 0; i &lt; SIDE; i++) {
+            for (int j = 0; j &lt; SIDE; j++) {
+                gameField[i][j]=tmp[i][j];
+            }
+        }
+    }
+        </code>
+                        </p>
+                        
+                    </section>
+                    <section class = "common education">
+                        <h2>Education</h2>
+                        <p>BISGU / Applied Informatics in Economics</p>
+                    </section>
+                    <section class = "common english_level">
+                        <h2>English level</h2>
+                        <p>At the moment my level is A0, but now I taking an English course. I hope the level up.</p>
+                    </section>
+                </section>
+            </div>
+            <footer class="footer">
+                <span class="lnk"><a href="https://github.com/Mrak9087" target="blank">Mrak9087</a></span>
+                <span>2021</span>
+                <span class="logo">
+                    <a href="https://rs.school/js/" target="blank">
+                        <img src="./rs_school_js.svg" alt="rs school">
+                    </a>
+                </span>
+            </footer>
+         </div>
+    </main>
+</body>
+</html>
