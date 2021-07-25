@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -77,16 +81,23 @@ code{
     box-sizing: border-box;
     max-width: 1100px;
     border-top: 3px solid black;
-    display: flex;
-    flex-direction: row;
+    
     padding: 30px 20px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
+    
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.footer a{
+
+.nav_footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav_footer a{
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
