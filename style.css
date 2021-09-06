@@ -89,7 +89,7 @@ code{
                 0px -2px 0 rgb(255, 255, 255),2px 0px 0 rgb(255, 255, 255),-2px 0px 0 rgb(255, 255, 255),
                 2px 2px 0 rgb(255, 255, 255),2px -2px 0 rgb(255, 255, 255),-2px 2px 0 rgb(255, 255, 255),
                 -2px -2px 0 rgb(255, 255, 255);
-    transition: all 0.5s ease;
+    transition: all 0.3s;
 }
 
 .git a{
@@ -102,7 +102,7 @@ code{
 }
 
 .git:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .information{
