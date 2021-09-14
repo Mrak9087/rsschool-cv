@@ -4,9 +4,11 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    padding: 0;
-    margin: 0;
     background-color: #ccc;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -36,6 +38,33 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    column-gap: 1px;
+}
+
+.nav_item{
+    display: flex;
+    justify-content: center;
+    max-width: 250px;
+    width: 100%;
+    background-color: #f7b83b;
+
+}
+
+.nav_link{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px 0 15px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: all 0.5s ;
+}
+
+.nav_link:hover{
+    transform: scale(1.1);
 }
 
 .content{
@@ -130,7 +159,7 @@ code{
 }
 
 .information h2{
-    border-bottom: 2px solid dimgray;
+    /* border-bottom: 2px solid dimgray; */
 }
 
 .common{
@@ -139,6 +168,30 @@ code{
     
     box-shadow: 0 0 25px rgba(0,0,0,0.6);
     padding: 20px;
+}
+
+.common_head{
+    border-bottom: 2px solid dimgray;
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head_link{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: violet;
+}
+/* 
+.common h2{
+    
+} */
+
+.scills_list{
+    padding-left: 35px;
 }
 
 .footer{
@@ -188,6 +241,10 @@ code{
 }
 
 @media (max-width: 700px){
+
+    .nav{
+        display: none;
+    }
     .information{
         padding-top: 20px;
         padding-bottom: 20px;
