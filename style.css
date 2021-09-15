@@ -60,7 +60,7 @@ main{
     font-weight: bold;
     font-size: 15px;
     text-transform: uppercase;
-    transition: all 0.5s ;
+    transition: all 0.3s ;
 }
 
 .nav_link:hover{
@@ -158,9 +158,9 @@ code{
     background-color: gray;
 }
 
-.information h2{
-    /* border-bottom: 2px solid dimgray; */
-}
+/* .information h2{
+    border-bottom: 2px solid dimgray;
+} */
 
 .common{
     margin: 15px;
@@ -177,18 +177,72 @@ code{
     margin-bottom: 25px;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 5px;
 }
 
 .head_link{
     display: flex;
     width: 30px;
     height: 30px;
-    background-color: violet;
+    background-image: url("./arrow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* 
 .common h2{
     
 } */
+
+.proj_link{
+    display: flex;
+    
+    width: calc((100% - 15px)/2) ;
+    text-decoration: none;
+    
+    color: white;
+    
+}
+
+.proj_description{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.project_wrapper{
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+}
+
+.link_wrapper{
+    display: flex;
+    width: 100%;
+    height: 160px;
+    flex-direction: column;
+    row-gap: 15px;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 10px 25px ;
+    background-color: rgba(51, 51, 51, 0.8);
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.clock{
+    background-image: url("./js-clock.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.mole{
+    background-image: url("./whak_a_mole.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
 
 .scills_list{
     padding-left: 35px;
@@ -277,4 +331,12 @@ code{
         border: none;        
     }
 
+}
+
+@media (max-width: 550px){
+    .project_wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
