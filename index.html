@@ -10,6 +10,18 @@
 <body>
     <main>
         <div class="wrapper">
+            <header id="header" class="header">
+                <nav class="nav">
+                    <ul>
+                        <li class="nav_item"><a href="#summary" class="nav_link">Summary</a></li>
+                        <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+                        <li class="nav_item"><a href="#code" class="nav_link">Code</a></li>
+                        <li class="nav_item"><a href="#project" class="nav_link">Project</a></li>
+                        <li class="nav_item"><a href="#education" class="nav_link">Education</a></li>
+                        <li class="nav_item"><a href="#level" class="nav_link">English level</a></li>
+                    </ul>
+                </nav>
+            </header>
             <div class="content">
                 <aside class = "general">
                     <div class="photo_info">
@@ -30,8 +42,11 @@
                 </aside>
 
                 <div class = "information">
-                    <section class = "common summary">
-                        <h2>Summary</h2>
+                    <section id="summary" class = "common summary">
+                        <div class="common_head">
+                            <h2>Summary</h2>
+                            <a href="#header" class="head_link"></a>
+                        </div>
                         <p>I work as a system administrator 10 years. 
                             I have experience programming in Delphi, 
                             create clients for working with databases: MS SQL, MySQL, Firebird. I know SQL. 
@@ -40,9 +55,13 @@
                             I like solving various puzzles. I want to become a professional developer. 
                             I am ready to develop in this direction. No bad habits.</p>
                     </section>
-                    <section class = "common skills">
-                        <h2>Skills</h2>
-                        <ul>
+                    <section id="skills" class = "common skills">
+                        <div class="common_head">
+                            <h2>Skills</h2>
+                            <a href="#header" class="head_link"></a>
+                        </div>
+                        
+                        <ul class="scills_list">
                             <li>Delphi (Rad Studio)</li>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -51,8 +70,11 @@
                             <li>SQL</li>
                         </ul>
                     </section>
-                    <section class = "common code">
-                        <h2>Code</h2>
+                    <section id="code" class = "common code">
+                        <div class="common_head">
+                            <h2>Code</h2>
+                            <a href="#header" class="head_link"></a>
+                        </div>
                         <p>
                             
                             <code>
@@ -74,12 +96,47 @@
                         </p>
                         
                     </section>
-                    <section class = "common education">
-                        <h2>Education</h2>
+                    <section id="project" class = "common project">
+                        <div class="common_head">
+                            <h2>My projects</h2>
+                            <a href="#header" class="head_link"></a>
+                        </div>
+                        <div class="project_wrapper">
+                        
+                            <a class="proj_link clock" href="https://rolling-scopes-school.github.io/mrak9087-JSFEPRESCHOOL/js-clock/" target="blank"> 
+                                <div class="link_wrapper">
+                                    <h3 class="head_project">
+                                        Clock
+                                    </h3>
+                                    <p class="proj_description">
+                                        Show time in different parts of the planet.
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="proj_link mole" href="https://rolling-scopes-school.github.io/mrak9087-JSFEPRESCHOOL/whack-a-mole/" target="blank"> 
+                                <div class="link_wrapper">
+                                    <h3 class="head_project">
+                                        Whack a mole
+                                    </h3>
+                                    <p class="proj_description">
+                                        Free the world of moles.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                    <section id="education" class = "common education">
+                        <div class="common_head">
+                            <h2>Education</h2>
+                            <a href="#header" class="head_link"></a>
+                        </div>
                         <p>BISGU / Applied Informatics in Economics</p>
                     </section>
-                    <section class = "common english_level">
-                        <h2>English level</h2>
+                    <section id="level" class = "common english_level">
+                        <div class="common_head">
+                            <h2>English level</h2>
+                            <a href="#header" class="head_link"></a>
+                        </div>
                         <p>At the moment my level is A0, but now I taking an English course. I hope the level up.</p>
                     </section>
                 </div>
