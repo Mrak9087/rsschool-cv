@@ -122,12 +122,6 @@ main{
     justify-content: space-around;
 }
 
-
-
-code{
-    white-space: pre-wrap;
-}
-
 .general{    
     max-width: 350px;
     width: 100%;
@@ -208,10 +202,6 @@ code{
     background-color: gray;
 }
 
-/* .information h2{
-    border-bottom: 2px solid dimgray;
-} */
-
 .common{
     margin: 15px;
     background-color: #ffffff;
@@ -238,10 +228,6 @@ code{
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* 
-.common h2{
-    
-} */
 
 .proj_link{
     display: flex;
@@ -272,7 +258,6 @@ code{
     height: 160px;
     flex-direction: column;
     row-gap: 15px;
-    /* justify-content: space-around; */
     align-items: center;
     padding: 10px 25px ;
     background-color: rgba(51, 51, 51, 0.8);
@@ -371,7 +356,6 @@ code{
 
     .burger_menu.active {
         transform: rotate(90deg);
-        /* z-index: 3; */
     }
 
     .nav{
