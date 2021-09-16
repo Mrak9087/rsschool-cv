@@ -6,21 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="./burger.js" defer></script>
 </head>
 <body>
     <main>
+        <h1 class="invisible">My CV</h1>
         <div class="wrapper">
             <header id="header" class="header">
-                <nav class="nav">
-                    <ul>
-                        <li class="nav_item"><a href="#summary" class="nav_link">Summary</a></li>
-                        <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
-                        <li class="nav_item"><a href="#code" class="nav_link">Code</a></li>
-                        <li class="nav_item"><a href="#project" class="nav_link">Project</a></li>
-                        <li class="nav_item"><a href="#education" class="nav_link">Education</a></li>
-                        <li class="nav_item"><a href="#level" class="nav_link">English level</a></li>
-                    </ul>
-                </nav>
+                <div class="navigation">
+                    <div class="burger_menu">
+                        <span class="tp"></span>
+                        <span class="ct"></span>
+                        <span class="bt"></span>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav_list">
+                            <li class="nav_item"><a href="#summary" class="nav_link">Summary</a></li>
+                            <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+                            <li class="nav_item"><a href="#code" class="nav_link">Code</a></li>
+                            <li class="nav_item"><a href="#project" class="nav_link">Project</a></li>
+                            <li class="nav_item"><a href="#education" class="nav_link">Education</a></li>
+                            <li class="nav_item"><a href="#level" class="nav_link">English level</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
             <div class="content">
                 <aside class = "general">
@@ -76,8 +88,8 @@
                             <a href="#header" class="head_link"></a>
                         </div>
                         <p>
-                            
-                            <code>
+                            <pre>
+                            <code class="java">
 
     private void rotateClockwise(){
         int tmp[][] = new int[SIDE][SIDE];
@@ -93,6 +105,7 @@
         }
     }
         </code>
+    </pre>
                         </p>
                         
                     </section>
