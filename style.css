@@ -227,6 +227,12 @@ main{
     background-image: url("./arrow.png");
     background-repeat: no-repeat;
     background-size: cover;
+    transform: rotate(-90deg);
+    transition: all 0.5s;
+}
+
+.head_link:hover{
+    transform: rotate(0deg);
 }
 
 .proj_link{
@@ -236,7 +242,11 @@ main{
     text-decoration: none;
     
     color: white;
-    
+    transition: all 0.5s;
+}
+
+.proj_link:hover{
+    transform: scale(1.1);
 }
 
 .proj_description{
@@ -262,6 +272,7 @@ main{
     padding: 10px 25px ;
     background-color: rgba(51, 51, 51, 0.8);
     text-align: center;
+    opacity: 0.8;
     overflow-y: hidden;
 }
 
@@ -277,6 +288,31 @@ main{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+.tech{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.tech_item{
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.html{
+    background-color: #E74C3C;
+}
+
+.css{
+    background-color: #206694;
+}
+
+.js{
+    background-color: #F1C40F;
 }
 
 .scills_list{
@@ -435,6 +471,15 @@ main{
     .project_wrapper{
         flex-direction: column;
         align-items: center;
+    }
+    
+}
+
+@media (max-width: 320px){
+    .nav_footer{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
     }
     
 }
